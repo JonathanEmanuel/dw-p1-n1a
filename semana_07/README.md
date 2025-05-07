@@ -16,6 +16,8 @@ Multiplicación *
 
 División /
 
+Modulo % (Resto de la división)
+
 ``` js
     3 * 2 = 6
     10 / 5 = 2
