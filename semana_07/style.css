@@ -36,3 +36,26 @@ footer {
     padding: 10px;
     text-align: center;
 }
+
+.cantidad {
+    color: white;
+    background-color: #0f7fee;
+    padding: 10px;
+    border-radius: 5px;
+}
+.estudiantes {
+    margin-top: 16px;
+    padding: 26px;
+    list-style: none;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+}
+
+.estudiantes li {
+    border: #ffffff solid 2px;
+    padding: 10px;
+    margin-bottom: 2px;
+    background-color: rgba(0, 128, 128, 0.704);
+    color: white;
+    border-radius: 5px;
+}
