@@ -1,17 +1,31 @@
-let precio = +prompt("Ingrese el precio");
-//precio = parseFloat( precio );
-let ivaPorcentaje = 0.21;
-//console.log(precio, typeof(precio));
-let iva = precio * ivaPorcentaje;
-let precioFinal = precio + iva;
+const mensajeDIV = document.querySelector('#mensaje');
+let nota;
+nota = +prompt('Ingrese la nota de la evaluación');
 
-
-let confirmacionIVA = confirm("Sumar IVA");
-
-// Condicionales
-if( confirmacionIVA == true ){
-    console.log("El precio Final con el IVA $", precioFinal);
-    alert("El precio final con el IVA es " + precioFinal);
+/*
+if( nota >= 7){
+    console.log('Aprobado');
+    mensajeDIV.innerHTML = "<p>Aprobado !</p>"
 } else {
-    alert("El pricio sin IVA es " + precio)
+    // Si está entre cuatro y siete
+    if( nota >= 4){
+        console.info('Aprobado, solo te queda rendir el final');
+        mensajeDIV.innerHTML = "<p class='bg-warning'>Aprobado, solo te queda rendir el final</p>"
+    } else {
+        console.error('Desaprobado :(');
+        mensajeDIV.innerHTML = "<p class='bg-danger'>Desaprobado :(</p>"
+    }
+}
+*/
+if( nota >= 7 && nota <=10){
+    console.log('Aprobado');
+    mensajeDIV.innerHTML = "<p>Aprobado !</p>"
+} else if( nota >= 4 && nota < 7){
+     console.info('Aprobado, solo te queda rendir el final');
+    mensajeDIV.innerHTML = "<p class='bg-warning'>Aprobado, solo te queda rendir el final</p>"
+} else if( nota >= 0 && nota < 4 ) {
+    console.error('Desaprobado :(');
+    mensajeDIV.innerHTML = "<p class='bg-danger'>Desaprobado :(</p>"
+} else {
+    mensajeDIV.innerHTML = "<p class='bg-info'>La nota debe esta rentre uno y diez</p>"
 }

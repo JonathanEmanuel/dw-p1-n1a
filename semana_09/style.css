@@ -41,7 +41,30 @@ h2 {
     margin-top: 16px;
 }
 
+#mensaje p{
+    border: 0.5px solid teal;
+    background-color: teal;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+}
+
+#mensaje .bg-warning {
+    background-color: #f3ef0a;
+    border: 0.5px solid #f3ef0a;;
+    color: #1a1a1a;
+}
+
+#mensaje .bg-danger {
+    background-color: #c21010;
+}
+
+#mensaje .bg-info {
+    background-color: #18a9d5;
+}
 .danger {
     color: brown;
     
 }
+
