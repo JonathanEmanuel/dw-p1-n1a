@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: "Space Grotesk", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #1a1a1a;
+    color: white;
+    text-align: center;
+    padding: 26px;
+}
+header img {
+    display: inline-block;
+    vertical-align: middle;
+} 
+h1 {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+
+main {
+    min-height: 75vh;
+    width: 80%;
+    margin: 20px auto;
+    padding: 16px;
+}   
+
+footer {
+    background-color: #1a1a1a;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+h2 {
+    margin-top: 16px;
+}
+.cantidad {
+    color: white;
+    background-color: #0f7fee;
+    padding: 1px 10px;
+    border-radius: 5px;
+}
+.estudiantes {
+    margin-top: 16px;
+    padding: 26px;
+    list-style: none;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+}
+
+.estudiantes li {
+    border: #ffffff solid 2px;
+    padding: 10px;
+    margin-bottom: 2px;
+    background-color: rgba(0, 128, 128, 0.704);
+    color: white;
+    border-radius: 5px;
+}
+
+.btn {
+    color: white;
+    background-color: #0f7fee;
+    border: 1px solid #0f7fee;
+    padding:10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #1079e3;
+}
+
+.btn:active {
+    background-color: #094886;
+}
