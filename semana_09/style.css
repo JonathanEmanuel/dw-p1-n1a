@@ -8,7 +8,7 @@
 }
 
 header {
-    background-color: #1a1a1a;
+    background-color: rebeccapurple;
     color: white;
     text-align: center;
     padding: 26px;
@@ -48,6 +48,7 @@ h2 {
     padding: 10px;
     border-radius: 5px;
     color: white;
+    margin-top: 5px;
 }
 
 #mensaje .bg-warning {
@@ -58,10 +59,17 @@ h2 {
 
 #mensaje .bg-danger {
     background-color: #c21010;
+    border: 0.5px solid #c21010;
 }
 
 #mensaje .bg-info {
     background-color: #18a9d5;
+}
+
+#mensaje .bg-promedio {
+    border:  0.5px solid rebeccapurple;
+    background-color: rebeccapurple;
+    color: white;
 }
 .danger {
     color: brown;
