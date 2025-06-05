@@ -30,6 +30,7 @@ main {
     width: 80%;
     margin: 20px auto;
     padding: 16px;
+    margin-bottom: 5vh;
 }   
 
 footer {
@@ -48,6 +49,9 @@ h2 {
     margin-top: 16px;
 }
 
+.text-danger {
+    color: red;
+}
 .row { display: flex}
 .col {
     padding: 10px;
@@ -98,4 +102,34 @@ h2 {
 
 .btn:active {
     background-color: #094886;
+}
+
+#container{
+    margin: 10px;
+    border: 3px dashed tomato;
+    min-height: 100px;
+    padding: 16px;
+}
+
+span {
+    background-color: rebeccapurple;
+    border-radius: 10px;
+    height: 10px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+#list-tasks{
+    width: 100%;
+    margin: 10px;
+    border: 3px dashed teal;
+    min-height: 100px;
+    padding-left: 36px;
+    padding-top: 10px;
+}
+
+input {
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
 }

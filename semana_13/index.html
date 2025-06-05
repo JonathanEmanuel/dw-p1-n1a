@@ -12,6 +12,7 @@
         <h1>Clases y Objetos</h1>
     </header>
     <main>
+        <button onclick="cambiarTitulo();" type="button" class="btn">Cambiar título</button>
        <div class="row">
         <div class="col">
             <h2>Objetos</h2>
@@ -39,10 +40,37 @@
 
         </pre>
        </div>
+       <hr>
+       <button onclick="addSpan();" class="btn" type="button">Agregar elementos</button>
+       <div id="container"></div>
+       <hr>
+       <div>
+            <p class="text-success">Texto 1</p>
+            <p class="text-danger">Texto 2</p>
+            <p class="text-success">Texto 3</p>
+       </div>
+
+       <hr>
+       <div class="row">
+        <div class="col">
+            <h2>Crear Tarea</h2>
+            <input id="task-name" type="text">
+            <button onclick="crearTarea();" class="btn" type="button">Guardar Tarea</button>
+        </div>
+        <div class="col">
+        <h2>Lista de Tareas</h2>
+        <ul id="list-tasks">
+            <li>Tarea uno</li>
+        </ul>
+        </div>
+       </div>
+
+
     </main>
     <footer>
         <p> EMAE | Programación I | 2025</p>
     </footer>
-    <script src="script.js"></script>
+    <script src="dom.js"></script>
+    <!-- <script src="script.js"></script> -->
 </body>
 </html>
