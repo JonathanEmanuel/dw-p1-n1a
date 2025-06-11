@@ -12,6 +12,7 @@ header {
     background-color: rebeccapurple;
     color: white;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
@@ -156,6 +157,9 @@ input {
     align-items: center;
 }
 
+.bg-green {
+    background-color: teal;
+}
 pre {
     background-color: #1a1a1a;
     color: white;
@@ -164,4 +168,18 @@ pre {
     border-radius: 5px;
     width: 100%;
     margin-bottom: 10px;
+}
+
+table td {
+    border: 0.3px solid gray;
+    text-align: center;
+}
+
+summary {
+    cursor: pointer;
+}
+
+details {
+    padding-left: 16px;
+
 }

@@ -15,41 +15,102 @@
 
        <div class="row">
         <div class="col">
-            <h4>Definición</h4>
-            <p> <strong>El Document Object Model (DOM) </strong>es una representación en árbol de la estructura HTML/XML, donde cada etiqueta es un nodo que podemos manipular con JavaScript.</p>
+            <summary>
+                <h4>Definición</h4>
+                <details>
+                    <p> <strong>El Document Object Model (DOM) </strong>es una representación en árbol de la estructura HTML/XML, donde cada etiqueta es un nodo que podemos manipular con JavaScript.</p>
+                </details>
+            </summary>
+     
+            <summary>
+                <h4>Selección de elementos</h4>
+                <details>
+                    <p>Métodos para seleccionar elementos</p>
+                    <strong>Tradicional</strong>
+                    <pre>
+                        document.getElementById("id");
+                        document.getElementBYClassName("clase");
+                        document.getElementByTagName("h1");
+                    </pre>
 
-            <h4>Selección de elementos</h4>
-            <p>Métodos para seleccionar elementos</p>
-            <strong>Tradicional</strong>
-            <pre>
-                document.getElementById("id");
-                document.getElementBYClassName("clase");
-                document.getElementByTagName("h1");
-            </pre>
+                    <strong>Moderna</strong>
+                    <pre>
+                        document.querySelector("h1");
+                        document.querySelector("#box1");
+                        document.querySelector(".box2");
+                    </pre>
+                    <p>Para seleccionar varios elementos del mismo tipo:</p>
+                    <pre> document.querySelectorAll("p");</pre>
 
-            <strong>Moderna</strong>
-            <pre>
-                document.querySelector("h1");
-                document.querySelector("#box1");
-                document.querySelector(".box2");
-            </pre>
-            <h4>Manipulación de contenido</h4>
+                    <p><em>querySelectorAll("p")</em> Retorna un NodeList, el cual es una colección de elementos. Podemos acceder a cada elemento por medio de su posición</p>
 
-            <h4>Creación y eleminación de elementos (nodos)</h4>
+                    <strong>Diferencias</strong>
+                    <table>
+                        <tr>
+                            <td>querySelector</td>
+                            <td>querySelectorAll</td>
+                        </tr>
+                        <tr>
+                            <td>Seleccion el primer elemento que coincide con el selector</td>
+                            <td>Selecciona todos los elementos que coinciden con el selector </td>
+                        </tr>
+                    </table>
+                </details>
+            </summary>
+
+            <summary>
+                <h4>Manipulación de contenido</h4>
+                <details>
+                    <p>Para maninupar el contenido, tenemos los métodos</p>
+                    <pre>   elemento.textContent = "Contenido modificado"
+   elemento.innerHTML ="<etiqueta>texto</etiqueta>";                        
+                    </pre>
+                    <p>Para agregar una clase css a un elementos</p>
+                    <pre>    elemento.classList.add("clase");
+                    </pre>
+                    <p>Para eliminar una clase de un elementos</p>
+                    <pre>    elemento.classList.remove("clase");
+                    </pre>
+                    <p>Para verificar si un elemento tiene una clase</p>
+                    <pre>    elemento.classList.contains("clase");</pre>
+                    <p>Otro método es el toggle</p>
+                    <pre>   elemento.classList.toggle("clase");</pre>
+                </details>
+            </summary>
+
+            <summary>
+                <h4>Creación y eliminación de elementos (nodos)</h4>
+
+                <details>
+                    <p>Para crear elemento</p>
+                    <pre> const nuevoP = document.createElement("p");</pre>
+                    <p>Modificamos el contenido</p>
+                    <pre>  nuevoP.textContent="Soy un nuevo texto";</pre>
+                    <p>Luego agregamos el neuvo elemento a un contendor padre</p>
+                    <pre>  padre.appenChilid( nuevoP);</pre>
+
+                    <p>Para eliminar elementos</p>
+                    <pre>   elemento.remove()</pre>
+                </details>
+            </summary>
+
         
             <h4>Eventos</h4>
+
+            <h4>Formularios</h4>
         </div>
-        <div class="col">
-            <img src="images/cubos.png" class="img-responsive" alt="cubo">
-        </div>
+<!--         <div class="col">
+            <img src="images/cubos.png" width="64px" class="img-responsive" alt="cubo">
+        </div> -->
        </div>
 
        <hr>
+       <button onclick="crearBox();" class="btn">Crear box</button>
        <div class="flex-container">
 
-        <div class="box" id="box1">1</div>
-        <div class="box box2">2</div>
-        <div class="box">3</div>
+        <div class="box" id="box1" onclick="cambiarColor();">1</div>
+        <div class="box box2" onclick="eliminarBox(this)">2</div>
+        <div class="box" onclick="eliminarBox(this)">3</div>
         <div class="box">4</div>
        </div>
 
