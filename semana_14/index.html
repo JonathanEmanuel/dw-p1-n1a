@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images/cubos.png" type="image/png">
+</head>
+<body>
+    <header>
+        <h1>DOM</h1>
+    </header>
+    <main>
+
+       <div class="row">
+        <div class="col">
+            <h4>Definición</h4>
+            <p> <strong>El Document Object Model (DOM) </strong>es una representación en árbol de la estructura HTML/XML, donde cada etiqueta es un nodo que podemos manipular con JavaScript.</p>
+
+            <h4>Selección de elementos</h4>
+            <p>Métodos para seleccionar elementos</p>
+            <strong>Tradicional</strong>
+            <pre>
+                document.getElementById("id");
+                document.getElementBYClassName("clase");
+                document.getElementByTagName("h1");
+            </pre>
+
+            <strong>Moderna</strong>
+            <pre>
+                document.querySelector("h1");
+                document.querySelector("#box1");
+                document.querySelector(".box2");
+            </pre>
+            <h4>Manipulación de contenido</h4>
+
+            <h4>Creación y eleminación de elementos (nodos)</h4>
+        
+            <h4>Eventos</h4>
+        </div>
+        <div class="col">
+            <img src="images/cubos.png" class="img-responsive" alt="cubo">
+        </div>
+       </div>
+
+       <hr>
+       <div class="flex-container">
+
+        <div class="box" id="box1">1</div>
+        <div class="box box2">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+       </div>
+
+
+
+    </main>
+    <footer>
+        <p> EMAE | Programación I | 2025</p>
+    </footer>
+    <script src="dom.js"></script>
+</body>
+</html>
