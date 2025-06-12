@@ -6,7 +6,7 @@ const box2 = document.getElementsByClassName('box2');
 const h1 = document.getElementsByTagName('h1');
 
  */
-let count = 4;
+let count = 2;
 // FORMA MODERNA
 const box1 = document.querySelector("#box1");
 const box2 = document.querySelector(".box2");
@@ -52,10 +52,24 @@ function crearBox(){
     const padre = document.querySelector('.flex-container');
     padre.appendChild(box);
 
+
+    box.addEventListener('dblclick', eliminarBox);
+    box.addEventListener('click', greenBox);
     console.log(box)
 }
 
-function eliminarBox(elemento){
-    console.log(elemento);
+function eliminarBox(evento){
+    const elemento = evento.target;
     elemento.remove();
 }
+
+function greenBox(evento){
+    const elemento = evento.target;
+    console.log(elemento);
+    elemento.classList.toggle('bg-green');
+    elemento.classList.toggle('zoom')
+}
+
+// EVENTOS
+const btnCrear = document.querySelector("#btnCrearBox");
+btnCrear.addEventListener("click", crearBox);

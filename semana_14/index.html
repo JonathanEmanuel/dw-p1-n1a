@@ -15,16 +15,17 @@
 
        <div class="row">
         <div class="col">
-            <summary>
-                <h4>Definición</h4>
-                <details>
+            <details>
+                <summary>Definición</summary>
+                <div class="detalle">
                     <p> <strong>El Document Object Model (DOM) </strong>es una representación en árbol de la estructura HTML/XML, donde cada etiqueta es un nodo que podemos manipular con JavaScript.</p>
-                </details>
-            </summary>
+                </div>
+
+            </details>
      
-            <summary>
-                <h4>Selección de elementos</h4>
-                <details>
+            <details>
+                <summary>Selección de elementos</summary>
+                <div class="detalle">
                     <p>Métodos para seleccionar elementos</p>
                     <strong>Tradicional</strong>
                     <pre>
@@ -55,12 +56,12 @@
                             <td>Selecciona todos los elementos que coinciden con el selector </td>
                         </tr>
                     </table>
-                </details>
-            </summary>
+                </div>
+            </details>
 
-            <summary>
-                <h4>Manipulación de contenido</h4>
-                <details>
+            <details>
+                <summary>Manipulación de contenido</summary>
+                <div class="detalle">
                     <p>Para maninupar el contenido, tenemos los métodos</p>
                     <pre>   elemento.textContent = "Contenido modificado"
    elemento.innerHTML ="<etiqueta>texto</etiqueta>";                        
@@ -75,13 +76,13 @@
                     <pre>    elemento.classList.contains("clase");</pre>
                     <p>Otro método es el toggle</p>
                     <pre>   elemento.classList.toggle("clase");</pre>
-                </details>
-            </summary>
+                </div>
+            </details>
 
-            <summary>
-                <h4>Creación y eliminación de elementos (nodos)</h4>
+            <details>
+                <summary>Creación y eliminación de elementos (nodos)</summary>
 
-                <details>
+                <div class="detalle">
                     <p>Para crear elemento</p>
                     <pre> const nuevoP = document.createElement("p");</pre>
                     <p>Modificamos el contenido</p>
@@ -91,13 +92,55 @@
 
                     <p>Para eliminar elementos</p>
                     <pre>   elemento.remove()</pre>
-                </details>
-            </summary>
+                </div>
+            </details>
 
-        
-            <h4>Eventos</h4>
+            <details>
+                <summary>Eventos</summary>
+                <div class="detalle">
+                    <p>Para poder escuchar un evento en un elemento HTML</p>
+                    <pre>   elemento.addEventLister("evento", manejador);</pre>
 
-            <h4>Formularios</h4>
+                    <p>Tenemos varios tipos de eventos para esuchar</p>
+
+                    <table>
+                        <tr>
+                            <th>Evento</th>
+                            <th>Uso</th>
+                        </tr>
+                        <tr>
+                            <td>click</td>
+                            <td>Botones | enlaces | images</td>
+                        </tr>
+                        <tr>
+                            <td>submit</td>
+                            <td>Formularios</td>
+                        </tr>
+                        <tr>
+                            <td>input</td>
+                            <td>Campos de texto</td>
+                        </tr>
+                        <tr>
+                            <td>focus</td>
+                            <td>Campos de texto</td>
+                        </tr>
+                        <tr>
+                            <td>change</td>
+                            <td>Campos de texto | selects</td>
+                        </tr>
+                        <tr>
+                            <td>keydown</td>
+                            <td>Atajos de teclado</td>
+                        </tr>
+                    </table>
+                </div>
+            </details>
+            <details open>
+                <summary>Formularios</summary>
+                <div class="detalle">
+                    <p>Lo vemos en la siguiente clase</p>
+                </div>
+            </details>
         </div>
 <!--         <div class="col">
             <img src="images/cubos.png" width="64px" class="img-responsive" alt="cubo">
@@ -106,12 +149,11 @@
 
        <hr>
        <button onclick="crearBox();" class="btn">Crear box</button>
+       <button id="btnCrearBox" class="btn">Crear Mejorado</button>
        <div class="flex-container">
 
-        <div class="box" id="box1" onclick="cambiarColor();">1</div>
-        <div class="box box2" onclick="eliminarBox(this)">2</div>
-        <div class="box" onclick="eliminarBox(this)">3</div>
-        <div class="box">4</div>
+        <div class="box" id="box1">1</div>
+        <div class="box box2">2</div>
        </div>
 
 
